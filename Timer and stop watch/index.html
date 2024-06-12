@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer and Stop-Watch </title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="bg-dark">
+
+  <div style="width:100%; background-color:rgb(230, 188, 230); padding-top: 20px; padding-left:40px; padding-bottom: 20px; border-bottom: 1px solid gray;">
+    <h1 style="color: purple;">Timer and Stop-Watch</h1>
+</div>
+  <section class="main">
+  <div class="swatch">
+    <div>
+      <br>
+      <h1 style="color: purple;  text-align: center; padding-bottom: 25px; ">Stop-Watch</h1>
+    </div>
+
+    <!-- Stop Watch Starts Here -->
+    <form name="form_main" class="py-5">
+    <section class="box" style=" margin-top:4ch; margin-bottom: 4ch;">
+      
+        <div class="text-center text-white" , style=" padding:3ch;">
+          <span style="font-weight:bold;font-size:25px;color: purple;">M</span> <br>
+          <span id="minute" style="font-weight:bold;font-size:25px;color: purple;text-align: center;">00</span>
+      </div>
+      
+      <div class=" text-center text-white", style=" padding:3ch;">
+            <span style="font-weight:bold;font-size:25px;color: purple;"> S</span> <br>
+            <span id="second" style="font-weight:bold;font-size:25px;color: purple;text-align: center;">00</span>
+        </div>
+
+        <div class="text-center text-white" , style="padding: 3ch;">
+          <span style="font-weight:bold;font-size:25px;color: purple;">MS</span><br>
+          <span id="millisecond" style="font-weight:bold;font-size:25px;color: purple;text-align: center;">000</span>
+        </div>
+    </section>
+
+    
+    <section >
+      <div class="text-center text-light" style="padding-top: 15px; padding-bottom:25px;">
+        <button type="button" name="start" class="text-center bg-success"
+          style="font-weight:bold;font-size:25px;color: black;text-align: center;">Start</button>
+        <button type="button" name="pause" class="text-center bg-primary"
+          style="font-weight:bold;font-size:25px;color: black;text-align: center;">Pause</button>
+        <button type="button" name="reset" class="text-center bg-danger"
+          style="font-weight:bold;font-size:25px;color: black;text-align: center;">Reset</button>
+      </div>
+    </section>
+    </form>
+  </div>
+  <!-- Stop Watch Ends Here -->
+
+
+  <!-- Timer Starts Here -->
+  <div class="swatch">
+    <div>
+      <br>
+      <h1 style="color: purple;  text-align: center; padding-bottom: 40px; ">Timer </h1>
+
+
+    </div>
+
+    <div class="container text-center">
+
+      <form class="form" style="padding-bottom: 20px;"">
+       
+        <input type=" number" min="1" class="time-input" placeholder="Enter Countdown"
+        style="color:#a82e34; border-radius: 10px; padding:10px; border-color:plum;">
+
+        <select name="format" class="bg-dark"
+          style="color: purple; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom:10px; border-radius: 8px;">
+          <option value="hours" style="font-size: 20px; font-weight: bolder;color: black;">Hours</option>
+          <option value="minutes" style="font-size: 20px; font-weight: bolder;color: black;">Minutes</option>
+          <option value="seconds" style="font-size: 20px; font-weight: bolder;color: black;">Seconds</option>
+        </select>
+        <br><br><br>
+        <center><button type="submit" class="set-btn bg-dark"
+            style="font-weight:700;font-size:25px;color: black;text-align: center;">Set</button></center>
+      </form>
+      <br>
+      <p class="countdown bg-dark" style="font-size: larger; font-weight: bolder;font-size: xx-large;color: black">00 :
+        00 : 00</p>
+      <br>
+
+      <div class="buttons">
+        <button class="stop-btn text-center bg-success"
+          style="font-weight:700;font-size:25px;color: black;text-align: center;">Stop</button>
+        <button class="reset-btn text-center bg-danger"
+          style="font-weight:700;font-size:25px;color: black;text-align: center;">Reset</button>
+      </div>
+
+    </div>
+  </div>
+ </section>
+  <script src="script.js"></script>
+</body>
+
+
+</html>

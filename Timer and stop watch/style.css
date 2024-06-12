@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  transition: all 0.5s;
+  color: #fff;
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding-top: 60px;
+  padding-left: 0px;
+  padding-right: 40px;
+}
+.box {
+  border: solid;
+  border-color: gray;
+  padding-left: 8px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  padding-right: 8px;
+  background-color: #e5e6e5;
+  height: 13%;
+  border-radius: 4ch;
+  border-width: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.swatch {
+  background-color: aliceblue;
+  padding: 15px 30px;
+  border: 1px solid black;
+  border-radius: 4ch;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f1f1f1;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  /* height: 100vh; */
+  width: fit-content;
+  float: left;
+}
+.container2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.wrapper {
+  width: fit-content;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 1rem;
+  padding: 2rem 4rem;
+  border-radius: 20px;
+  font-size: 2.5rem;
+  background-color: #101111;
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    padding: 2rem 3rem;
+  }
+}
+.buttons {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 1rem;
+}
+.text {
+  font-size: 1rem;
+}
+button {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #e5e6e5;
+  padding: 7px 20px;
+  border: 1px solid gray;
+  border-radius: 24px;
+  cursor: pointer;
+  color: black;
+  transition: all 0.2s ease;
+  outline: 0;
+  margin: 0.5rem;
+}
+
+button:active {
+  background-color: #a82e34;
+  color: #000;
+}
